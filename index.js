@@ -16,7 +16,7 @@ app.command("/rafif-dev-ping", async ({ command, ack, respond }) => {
     await respond({ text: `Pong!\nLatency: ${latency}ms` });
 });
 
-app.command("/dsb-catfact", async ({ command, ack, respond }) => {
+app.command("/dbs-catfact-dev", async ({ command, ack, respond }) => {
     await ack();
 
     try {
@@ -29,7 +29,7 @@ app.command("/dsb-catfact", async ({ command, ack, respond }) => {
     }
 })
 
-app.command("/dsb-joke", async ({ command, ack, respond }) => {
+app.command("/dbs-joke-dev", async ({ command, ack, respond }) => {
     await ack();
 
     try {
