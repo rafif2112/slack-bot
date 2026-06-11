@@ -11,7 +11,7 @@ const app = new App({
 
 const commands = [
     {
-        command: "/text-ping",
+        command: "/fidev-ping",
         description: "Check bot latency",
         handler: async ({ command, ack, respond }) => {
             const start = Date.now();
@@ -21,7 +21,7 @@ const commands = [
         }
     },
     {
-        command: "/fifdev-catfact",
+        command: "/fidev-catfact",
         description: "Get a random cat fact",
         handler: async ({ command, ack, respond }) => {
             await ack();
@@ -34,7 +34,7 @@ const commands = [
         }
     },
     {
-        command: "/fifdev-joke",
+        command: "/fidev-joke",
         description: "Get a random joke",
         handler: async ({ command, ack, respond }) => {
             await ack();
@@ -47,7 +47,7 @@ const commands = [
         }
     },
     {
-        command: "/hello",
+        command: "/fidev-hello",
         description: "Say hello to the bot",
         handler: async ({ command, ack, respond }) => {
             await ack();
@@ -55,7 +55,7 @@ const commands = [
         }
     },
     {
-        command: "/echo",
+        command: "/fidev-echo",
         description: "Echo back your message",
         handler: async ({ command, ack, respond }) => {
             await ack();
@@ -63,7 +63,7 @@ const commands = [
         }
     },
     {
-        command: "/quote",
+        command: "/fidev-quote",
         description: "Get a random inspirational quote",
         handler: async ({ command, ack, respond }) => {
             await ack();
@@ -82,7 +82,7 @@ commands.forEach(cmd => {
     app.command(cmd.command, cmd.handler);
 });
 
-app.command("/help", async ({ command, ack, respond }) => {
+app.command("/fidev-help", async ({ command, ack, respond }) => {
     await ack();
     
     const blocks = [
